@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-salary-manager-client-side-solution",
+    "id": "62a654ca-f51f-4dd6-9dd3-c1f5f4fbd1ae",
+    "version": "1.0.0.0",
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-salary-manager.sppkg"
+  }
+}

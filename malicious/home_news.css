@@ -1,0 +1,24 @@
+.news {
+    float: left;
+    max-width: 450px;
+    border: 1px solid darkblue;
+    border-radius: 5px 5px 5px 5px;
+    margin: 5px;
+    padding: 3px;
+    }
+    
+    .news article {
+        display: inline-block;
+        width: 300px;
+    }
+    
+    .news img {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        vertical-align: top;
+        margin-right: 20px;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+    

@@ -1,0 +1,61 @@
+{
+  /**
+    Install Chrome Debugger Extension for Visual Studio Code
+    to debug your components with the Chrome browser:
+    https://aka.ms/spfx-debugger-extensions
+   */
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Local workbench",
+      "type": "chrome",
+      "request": "launch",
+      "url": "https://localhost:4321/temp/workbench.html",
+      "webRoot": "${workspaceRoot}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../../src/*": "${webRoot}/src/*"
+      },
+      "runtimeArgs": [
+        "--remote-debugging-port=9222"
+      ]
+    },
+    {
+      "name": "Hosted workbench YPCode",
+      "type": "chrome",
+      "request": "launch",
+      "url": "https://ypcode.sharepoint.com/_layouts/workbench.aspx",
+      "webRoot": "${workspaceRoot}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../../src/*": "${webRoot}/src/*"
+      },
+      "runtimeArgs": [
+        "--remote-debugging-port=9222",
+        "--profile-directory=Profile 1"
+        // "--user-data-dir=C:\\Users\\yanni\\AppData\\Local\\Google\\Chrome\\User Data"
+      ]
+    },
+    {
+      "name": "Hosted workbench ike365",
+      "type": "chrome",
+      "request": "launch",
+      "url": "https://ike365.sharepoint.com/sites/dev/_layouts/workbench.aspx",
+      "webRoot": "${workspaceRoot}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../src/*": "${webRoot}/src/*",
+        "webpack:///../../../../../src/*": "${webRoot}/src/*"
+      },
+      "runtimeArgs": [
+        "--remote-debugging-port=9222",
+        "--profile-directory=Profile 2"
+      ]
+    }
+  ]
+}

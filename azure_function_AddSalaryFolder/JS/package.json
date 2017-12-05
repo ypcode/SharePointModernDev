@@ -1,0 +1,6 @@
+{
+    "dependencies": {
+        "node-fetch": "1.7.3",
+        "sp-pnp-js": "3.0.1"
+      }
+}

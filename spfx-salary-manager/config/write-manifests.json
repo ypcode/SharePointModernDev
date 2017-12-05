@@ -1,0 +1,4 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/write-manifests.schema.json",
+  "cdnBasePath": "https://ike365.sharepoint.com/sites/aos_classic/SiteAssets/spfx/salary/"
+}

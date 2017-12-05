@@ -1,0 +1,29 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "d3e15e1d-5d79-4bba-a524-1cd9b47efd55",
+  "alias": "SalaryManagerWebPart",
+  "componentType": "WebPart",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2,
+
+  // If true, the component can only be installed on sites where Custom Script is allowed.
+  // Components that allow authors to embed arbitrary script code should set this to true.
+  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+  "requiresCustomScript": false,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
+    "group": { "default": "iKe WebParts" },
+    "title": { "default": "Payslips" },
+    "description": { "default": "SalaryManager description" },
+    "iconImageUrl": "https://ike365.sharepoint.com/sites/aos_classic/SiteAssets/spfx/salary/logo.png",
+    "properties": {
+      "folderViewMode": 0,
+      "salariesLibraryName": "Salaries",
+      "payrollOfficersGroupName":"Payroll Officers",
+      "addSalaryFolderApiUrl": "https://ike-aos-func.azurewebsites.net/api/AddSalaryFolderJS"
+    }
+  }]
+}
